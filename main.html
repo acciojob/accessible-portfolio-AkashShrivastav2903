@@ -4,29 +4,67 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
-	<title>ARIA Role</title>
+	<title>John Doe - Accessible Portfolio</title>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-	<nav>
-		<a href="#">Home</a>
-		<a href="#">About us</a>
-		<a href="#">Contact us</a>
-		
-	</nav>
-	<h1>ARIA Items</h1>
-	<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Beauty/GW/Jupiter/leadup/2090538521._CB777181212_.jpg" height="300px" alt="Home image">
-	<p>Huge Selection Of Products — Prime Members can enjoy unlimited Free Shipping, Early Access To Lightning Deals and more. Browse Through a Wide Assortment Of Amazing and Premium Beauty Products. Top Brands.</p>
-	<ul>
-		<li>Protein Powder</li>
-		<li>Face Wash</li>
-		<li>Keyboard</li>
-		<li>Towel</li>
-	</ul>
-	
+	 <header>
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="logo">John Doe</div>
+            <ul role="list">
+                <li role="listitem"><a href="#about">About</a></li>
+                <li role="listitem"><a href="#skills">Skills</a></li>
+                <li role="listitem"><a href="#projects">Projects</a></li>
+                <li role="listitem"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about" class="hero">
+            <div class="container">
+                <div class="profile-image">
+                    <img src="https://via.placeholder.com/400x400" alt="Portrait of John Doe, a web developer" role="img">
+                </div>
+                <div class="intro">
+                    <h1 role="heading" aria-level="1">John Doe - Web Developer</h1>
+                    <p class="description">
+                        I'm a passionate web developer with 5+ years of experience creating accessible, 
+                        user-friendly websites and applications. I specialize in front-end development 
+                        with a focus on accessibility and performance.
+                    </p>
+                    <p>
+                        My mission is to build digital experiences that are inclusive and available to everyone, 
+                        regardless of ability or disability. I believe that good design is accessible design.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2>Technical Skills</h2>
+                <ul class="skills-list" role="list">
+                    <li role="listitem">HTML5 & Accessibility (WCAG 2.1)</li>
+                    <li role="listitem">CSS3 & Responsive Design</li>
+                    <li role="listitem">JavaScript (ES6+)</li>
+                    <li role="listitem">React & Vue.js</li>
+                    <li role="listitem">Node.js & Express</li>
+                    <li role="listitem">Git & Version Control</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 John Doe. All rights reserved.</p>
+            <p>This portfolio follows accessibility best practices.</p>
+        </div>
+    </footer>
 	
 </body>
 
